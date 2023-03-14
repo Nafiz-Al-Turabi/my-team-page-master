@@ -1,6 +1,110 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'PT Serif', serif;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 110px;
+}
+
+.title {
+    font-size: 36px;
+    letter-spacing: -0.045em;
+}
+
+.Intro {
+    font-family: 'Poppins';
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.intro-description {
+    width: 300px;
+    font-family: 'Poppins';
+    font-size: 18px;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 75%;
+    margin: 0 auto;
+}
+
+.card,
+.card-2,
+.card-5,
+.card-3,
+.card-4,
+.card-6 {
+    margin-top: 96px;
+    width: 270px;
+    /* text-align: center; */
+    position: relative;
+}
+
+.card-2,
+.card-5 {
+    margin-top: 196px;
+}
+
+
+.side-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    writing-mode: vertical-rl;
+    transform: rotate(360deg);
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.name {
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.footer-container{
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 24px;
+}
+.footer{
+    color: #BDBDBD;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 71px;
+    }
+
+    .title {
+        font-size: 36px;
+        margin-bottom: 38px;
+        letter-spacing: -0.045em;
+    }
+
+    .images {
+        margin-top: 96px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card, .card-3, .card-5 {
+        margin:0;
+    }
+    .footer-container{
+        text-align: center;
+    }
+
 }
